@@ -1,0 +1,68 @@
+# =============================================================================
+# AI CV Assistant — .gitignore
+# =============================================================================
+
+# ─── Python ──────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.venv/
+venv/
+env/
+ENV/
+pip-wheel-metadata/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+coverage.xml
+*.cover
+
+# ─── Node / Frontend ─────────────────────────────────────────────────────────
+node_modules/
+dist/
+.cache/
+*.tsbuildinfo
+
+# ─── Environment Variables ───────────────────────────────────────────────────
+.env
+.env.local
+.env.*.local
+backend/.env
+frontend/.env
+
+# ─── IDE / Editors ───────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ─── OS ──────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ─── Docker ──────────────────────────────────────────────────────────────────
+*.override.yml
+
+# ─── Uploads / Vector Store ──────────────────────────────────────────────────
+backend/uploads/
+backend/faiss_indexes/
+*.faiss
+*.pkl
+
+# ─── Logs ────────────────────────────────────────────────────────────────────
+*.log
+logs/
+
+# ─── Alembic ─────────────────────────────────────────────────────────────────
+# Don't ignore versions — we want those tracked
+alembic/__pycache__/
